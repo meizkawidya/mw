@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
-
 <style>
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>
   body {
     margin: 0;
     background: white;
@@ -24,6 +39,7 @@
 </head>
 
 <body>
-  <img src="mw2.png" alt="">
+<img src="mw2-desktop.png" class="desktop">
+<img src="mw2-mobile.png" class="mobile">
 </body>
 </html>
