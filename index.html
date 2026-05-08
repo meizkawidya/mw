@@ -101,14 +101,16 @@
 
 /* DESKTOP IMAGE */
 .desktop-illustration {
-  position: absolute;
+  position: fixed;
 
-  width: 900px;
-  max-width: none;
-
+  left: 0;
   bottom: 0;
 
-  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: contain;
+  object-position: center bottom;
 
   z-index: 1;
 
