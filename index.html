@@ -31,7 +31,7 @@
       top: 42px;
       left: 42px;
 
-      width: 1120px;
+      width: 1050px;
 
       font-family: Helvetica, Arial, sans-serif;
       font-size: 39px;
@@ -46,32 +46,44 @@
     }
 
     /* DESKTOP LINKS */
-    .links {
-      position: absolute;
+.links {
+  position: absolute;
 
-      top: 44px;
-      right: 58px;
+  top: 44px;
+  right: 58px;
 
-      display: flex;
-      gap: 38px;
+  display: flex;
+  gap: 38px;
 
-      z-index: 3;
-    }
+  z-index: 3;
+}
 
-    .links a {
-      font-family: 'EB Garamond', serif;
+.links a {
+  font-family: 'EB Garamond', serif;
 
-      font-size: 30px;
+  font-size: 30px;
 
-      color: #0033cc;
+  color: #0033cc;
 
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
+  text-decoration: underline;
+  text-transform: uppercase;
+}
 
-    .links a:hover {
-      opacity: 0.6;
-    }
+.links a:hover {
+  opacity: 0.6;
+}
+
+/* INACTIVE INFO */
+.inactive-link {
+  font-family: 'EB Garamond', serif;
+
+  font-size: 30px;
+
+  color: #0033cc;
+
+  text-decoration: underline;
+  text-transform: uppercase;
+}
 
     /* DESKTOP IMAGE */
     .desktop-illustration {
@@ -87,41 +99,44 @@
       display: block;
     }
 
-    /* MOBILE IMAGE */
-    .mobile-illustration {
-      display: none;
-    }
+    ?
 
     /* MOBILE */
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-      body {
-        overflow: hidden;
-      }
+  body {
+    overflow: hidden;
+  }
 
-      .copy {
-        top: 24px;
-        left: 24px;
+  .copy {
+    top: 20px;
+    left: 20px;
 
-        width: 52vw;
+    width: 51vw;
 
-        font-size: 19px;
-        line-height: 1.06;
+    font-size: 23px;
+    line-height: 1.03;
+    letter-spacing: -0.035em;
+  }
 
-        letter-spacing: -0.03em;
-      }
+  .links {
+    top: 20px;
+    right: 20px;
 
-      .links {
-        top: 24px;
-        right: 24px;
+    gap: 10px;
+  }
 
-        gap: 10px;
-      }
+  .links a {
+    font-size: 20px;
+    line-height: 1;
+  }
 
-      .links a {
-        font-size: 18px;
-        line-height: 1;
-      }
+  .inactive-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+}
 
       /* SWITCH IMAGES */
       .desktop-illustration {
@@ -129,18 +144,17 @@
       }
 
       .mobile-illustration {
-        display: block;
+  display: block;
 
-        position: absolute;
+  position: absolute;
 
-        width: 92vw;
+  width: 92vw;
 
-        right: -40px;
-        bottom: 40px;
+  right: -10px;
+  bottom: 40px;
 
-        z-index: 1;
-      }
-
+  z-index: 1;
+}
     }
 
   </style>
@@ -152,14 +166,14 @@
 
     <!-- COPYWRITING -->
     <div class="copy">
-      MEIZKA IS CURRENTLY PACING / JUGGLING BETWEEN WORK & LIKE 6 OTHER HOBBIES (WHILST FIGHTING THE URGE TO LIE ON THE GRASS, WRITE POEMS, AND LISTEN TO THE BIRDS) — BUT SHE KNOWS THE SITE AIN’T GONNA RUN FOR ITSELF... FINISHED SOOOOOOOONN!
+      MEIZKA IS CURRENTLY PACING / JUGGLING BETWEEN WORK & LIKE 6 OTHER HOBBIES (WHILST FIGHTING THE URGE TO LIE ON THE GRASS, WRITE POEMS, AND LISTEN TO THE BIRDS) — BUT SHE KNOWS THE SITE AIN’T GONNA RUN FOR ITSELF... FINISHED SOOOOOOOONN!👀
     </div>
 
     <!-- LINKS -->
     <div class="links">
       <a href="https://instagram.com/meizkawidya" target="_blank">INSTA</a>
 
-      <a href="mailto:youremail@gmail.com">INFO</a>
+      <span class="inactive-link">INFO</span>
     </div>
 
     <!-- DESKTOP ILLUSTRATION -->
