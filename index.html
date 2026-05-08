@@ -35,7 +35,7 @@
 
   font-family: Helvetica, Arial, sans-serif;
   font-size: 32px;
-  line-height: 1.2;
+  line-height: 1.1;
 
   letter-spacing: 0em;
   text-transform: uppercase;
@@ -55,6 +55,8 @@
   display: flex;
   gap: 38px;
 
+  align-items: baseline;
+
   z-index: 3;
 }
 
@@ -62,11 +64,14 @@
   font-family: 'EB Garamond', serif;
 
   font-size: 28px;
+  line-height: 1;
 
   color: #0033cc;
 
   text-decoration: underline;
   text-transform: uppercase;
+
+  display: inline-block;
 }
 
 .links a:hover {
@@ -78,11 +83,14 @@
   font-family: 'EB Garamond', serif;
 
   font-size: 28px;
+  line-height: 1;
 
   color: #0033cc;
 
   text-decoration: underline;
   text-transform: uppercase;
+
+  display: inline-block;
 }
 
 /* DESKTOP IMAGE */
@@ -123,10 +131,11 @@
     .desktop-illustration {
   position: absolute;
 
-  width: 1180px;
+  width: 100vw;
+  height: auto;
 
-  right: 40px;
-  bottom: 40px;
+  left: 0;
+  bottom: 0;
 
   z-index: 1;
 
