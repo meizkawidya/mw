@@ -158,9 +158,9 @@
     /* MOBILE */
 @media (max-width: 768px) {
 
-  body {
-    overflow: hidden;
-  }
+    width: 100%;
+  overflow-x: hidden;
+}
 
   .copy {
   top: 20px;
@@ -200,12 +200,16 @@
       .mobile-illustration {
   display: block;
 
-  position: absolute;
+  position: fixed;
 
-  width: 92vw;
+  left: 0;
+  bottom: 0;
 
-  right: -20px;
-  bottom: 40px;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: contain;
+  object-position: center bottom;
 
   z-index: 1;
 }
