@@ -1,44 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Meizka</title>
+
+  <!-- EB Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
   <style>
+
     body {
       margin: 0;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      background: #f3f3f3;
+      overflow: hidden;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    .page {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    /* DESKTOP COPY */
+    .copy {
+      position: absolute;
+
+      top: 42px;
+      left: 42px;
+
+      width: 1120px;
+
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 39px;
+      line-height: 1.12;
+
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+
+      color: black;
+
+      z-index: 2;
+    }
+
+    /* DESKTOP LINKS */
+    .links {
+      position: absolute;
+
+      top: 44px;
+      right: 58px;
+
+      display: flex;
+      gap: 38px;
+
+      z-index: 3;
+    }
+
+    .links a {
+      font-family: 'EB Garamond', serif;
+
+      font-size: 30px;
+
+      color: #0033cc;
+
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    .links a:hover {
+      opacity: 0.6;
+    }
+
+    /* DESKTOP IMAGE */
+    .desktop-illustration {
+      position: absolute;
+
+      width: 1180px;
+
+      right: 40px;
+      bottom: -120px;
+
+      z-index: 1;
+
       display: block;
     }
 
-    .mobile {
+    /* MOBILE IMAGE */
+    .mobile-illustration {
       display: none;
     }
 
+    /* MOBILE */
     @media (max-width: 768px) {
-      .desktop {
+
+      body {
+        overflow: hidden;
+      }
+
+      .copy {
+        top: 24px;
+        left: 24px;
+
+        width: 52vw;
+
+        font-size: 19px;
+        line-height: 1.06;
+
+        letter-spacing: -0.03em;
+      }
+
+      .links {
+        top: 24px;
+        right: 24px;
+
+        gap: 10px;
+      }
+
+      .links a {
+        font-size: 18px;
+        line-height: 1;
+      }
+
+      /* SWITCH IMAGES */
+      .desktop-illustration {
         display: none;
       }
 
-      .mobile {
+      .mobile-illustration {
         display: block;
+
+        position: absolute;
+
+        width: 92vw;
+
+        right: -40px;
+        bottom: 40px;
+
+        z-index: 1;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
-<img src="mw-desktop.png" class="desktop">
-<img src="mw-mobile.png" class="mobile">
+  <div class="page">
+
+    <!-- COPYWRITING -->
+    <div class="copy">
+      MEIZKA IS CURRENTLY PACING / JUGGLING BETWEEN WORK & LIKE 6 OTHER HOBBIES (WHILST FIGHTING THE URGE TO LIE ON THE GRASS, WRITE POEMS, AND LISTEN TO THE BIRDS) — BUT SHE KNOWS THE SITE AIN’T GONNA RUN FOR ITSELF... FINISHED SOOOOOOOONN!
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+      <a href="https://instagram.com/meizkawidya" target="_blank">INSTA</a>
+
+      <a href="mailto:youremail@gmail.com">INFO</a>
+    </div>
+
+    <!-- DESKTOP ILLUSTRATION -->
+    <img class="desktop-illustration" src="mw2-desktop.png" alt="illustration">
+
+    <!-- MOBILE ILLUSTRATION -->
+    <img class="mobile-illustration" src="mw2-mobile.png" alt="illustration">
+
+  </div>
 
 </body>
+
 </html>
