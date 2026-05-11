@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>meizkawidya</title>
 
@@ -127,54 +127,70 @@
     }
 
     /* MOBILE */
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-      .copy {
-        top: 16px;
-        left: 17px;
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
 
-        width: 244px;
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
-        font-size: 21px;
-        line-height: 1.18;
-        letter-spacing: 0em;
-      }
+  .copy {
+    top: 16px;
+    left: 17px;
 
-      .links {
-        top: 17px;
-        right: 17px;
+    width: 244px;
 
-        gap: 10px;
-      }
+    font-size: 21px;
+    line-height: 1.18;
+    letter-spacing: 0em;
+  }
 
-      .links a {
-        font-size: 19px;
-        line-height: 1;
-      }
+  .links {
+    top: 17px;
+    right: 17px;
 
-      .inactive-link {
-        font-size: 19px;
-        line-height: 1;
-      }
+    gap: 10px;
+  }
 
-      /* HIDE DESKTOP IMAGE */
-      .desktop-illustration {
-        display: none;
-      }
+  .links a {
+    font-size: 19px;
+    line-height: 1;
+  }
 
-      /* SHOW MOBILE IMAGE */
-      .mobile-illustration {
-  display: block;
+  .inactive-link {
+    font-size: 19px;
+    line-height: 1;
+  }
 
-  position: fixed;
+  /* HIDE DESKTOP IMAGE */
+  .desktop-illustration {
+    display: none;
+  }
 
-  left: 0;
-  bottom: 20px;
+  /* SHOW MOBILE IMAGE */
+  .mobile-illustration {
+    display: block;
 
-  width: 100vw;
-  height: auto;
+    position: fixed;
 
-  z-index: 1;
+    left: 50%;
+    bottom: 20px;
+
+    width: 112vw;
+    max-width: none;
+    height: auto;
+
+    transform: translateX(-50%);
+
+    z-index: 1;
+  }
+
 }
 
     }
